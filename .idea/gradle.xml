@@ -20,6 +20,15 @@
             <option value="$PROJECT_DIR$/Topics/Declaring a method/Method signature" />
             <option value="$PROJECT_DIR$/Topics/Declaring a method/The sign of a number" />
             <option value="$PROJECT_DIR$/Topics/Declaring a method/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Defining classes/A keyword for creating objects" />
+            <option value="$PROJECT_DIR$/Topics/Defining classes/Accounts" />
+            <option value="$PROJECT_DIR$/Topics/Defining classes/Inner boxes" />
+            <option value="$PROJECT_DIR$/Topics/Defining classes/Representing time as a class" />
+            <option value="$PROJECT_DIR$/Topics/Defining classes/The keyword" />
+            <option value="$PROJECT_DIR$/Topics/Defining classes/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Errors in programs/Fix the program" />
+            <option value="$PROJECT_DIR$/Topics/Errors in programs/Select the statement" />
+            <option value="$PROJECT_DIR$/Topics/Errors in programs/Theory" />
             <option value="$PROJECT_DIR$/Topics/Functional decomposition/A quadratic equation" />
             <option value="$PROJECT_DIR$/Topics/Functional decomposition/How to decompose correctly" />
             <option value="$PROJECT_DIR$/Topics/Functional decomposition/Kate's math function" />
@@ -29,6 +38,10 @@
             <option value="$PROJECT_DIR$/Topics/Iterating over arrays/The minimum value of an array" />
             <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Theory" />
             <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Two numbers never occur next to each other" />
+            <option value="$PROJECT_DIR$/Topics/NPE/Avoid NPE with strings" />
+            <option value="$PROJECT_DIR$/Topics/NPE/Lines that may throw NPE" />
+            <option value="$PROJECT_DIR$/Topics/NPE/Theory" />
+            <option value="$PROJECT_DIR$/Topics/NPE/Unknown input" />
             <option value="$PROJECT_DIR$/Topics/Overloading/Determine the output" />
             <option value="$PROJECT_DIR$/Topics/Overloading/Overloading methods" />
             <option value="$PROJECT_DIR$/Topics/Overloading/Print" />
