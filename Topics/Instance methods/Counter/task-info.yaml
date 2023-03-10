@@ -1,0 +1,19 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    class Counter {
+
+        int current;
+
+        // write your methods here
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/2953#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Fri, 10 Mar 2023 13:32:51 UTC"
+record: -1
+submission_language: java17
