@@ -47,6 +47,10 @@
             <option value="$PROJECT_DIR$/Topics/Getters and setters/Getting the fullname" />
             <option value="$PROJECT_DIR$/Topics/Getters and setters/The name of setter" />
             <option value="$PROJECT_DIR$/Topics/Getters and setters/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/Access members inside child classes" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/Classes for Hospital" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/Pet inheritance" />
+            <option value="$PROJECT_DIR$/Topics/Inheritance/Theory" />
             <option value="$PROJECT_DIR$/Topics/Instance methods/Car" />
             <option value="$PROJECT_DIR$/Topics/Instance methods/Circle" />
             <option value="$PROJECT_DIR$/Topics/Instance methods/Counter" />
@@ -61,6 +65,9 @@
             <option value="$PROJECT_DIR$/Topics/Iterating over arrays/The minimum value of an array" />
             <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Theory" />
             <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Two numbers never occur next to each other" />
+            <option value="$PROJECT_DIR$/Topics/Multiple constructors/About constructors" />
+            <option value="$PROJECT_DIR$/Topics/Multiple constructors/Phone" />
+            <option value="$PROJECT_DIR$/Topics/Multiple constructors/Theory" />
             <option value="$PROJECT_DIR$/Topics/NPE/Avoid NPE with strings" />
             <option value="$PROJECT_DIR$/Topics/NPE/Lines that may throw NPE" />
             <option value="$PROJECT_DIR$/Topics/NPE/Theory" />
