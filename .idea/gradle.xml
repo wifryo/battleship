@@ -10,6 +10,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Additional" />
             <option value="$PROJECT_DIR$/Topics/Arrays as parameters/Application as a class" />
             <option value="$PROJECT_DIR$/Topics/Arrays as parameters/How to invoke the method" />
             <option value="$PROJECT_DIR$/Topics/Arrays as parameters/Theory" />
@@ -77,6 +78,10 @@
             <option value="$PROJECT_DIR$/Topics/Iterating over arrays/The minimum value of an array" />
             <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Theory" />
             <option value="$PROJECT_DIR$/Topics/Iterating over arrays/Two numbers never occur next to each other" />
+            <option value="$PROJECT_DIR$/Topics/Multidimensional array/Indexing rules" />
+            <option value="$PROJECT_DIR$/Topics/Multidimensional array/Multidimensional array features" />
+            <option value="$PROJECT_DIR$/Topics/Multidimensional array/Symmetric matrix" />
+            <option value="$PROJECT_DIR$/Topics/Multidimensional array/Theory" />
             <option value="$PROJECT_DIR$/Topics/Multiple constructors/About constructors" />
             <option value="$PROJECT_DIR$/Topics/Multiple constructors/Phone" />
             <option value="$PROJECT_DIR$/Topics/Multiple constructors/Theory" />
