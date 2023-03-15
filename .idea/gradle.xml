@@ -11,6 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Additional" />
+            <option value="$PROJECT_DIR$/Battleship/task" />
             <option value="$PROJECT_DIR$/Topics/Array exceptions/Calculate Square" />
             <option value="$PROJECT_DIR$/Topics/Array exceptions/Determine an exception" />
             <option value="$PROJECT_DIR$/Topics/Array exceptions/Explore the standard class library" />
