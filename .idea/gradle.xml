@@ -136,6 +136,11 @@
             <option value="$PROJECT_DIR$/Topics/Throwing exceptions/Theory" />
             <option value="$PROJECT_DIR$/Topics/Throwing exceptions/Throw an IOException" />
             <option value="$PROJECT_DIR$/Topics/Throwing exceptions/Throwing statements" />
+            <option value="$PROJECT_DIR$/Topics/Try with resources/Can be fixed" />
+            <option value="$PROJECT_DIR$/Topics/Try with resources/How many classes can be handled" />
+            <option value="$PROJECT_DIR$/Topics/Try with resources/How to release" />
+            <option value="$PROJECT_DIR$/Topics/Try with resources/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Try with resources/What can be released" />
             <option value="$PROJECT_DIR$/util" />
           </set>
         </option>

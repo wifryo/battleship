@@ -25,3 +25,4 @@ content:
 - Multidimensional array
 - Array exceptions
 - Input streams
+- Try with resources
