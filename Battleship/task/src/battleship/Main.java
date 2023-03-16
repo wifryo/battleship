@@ -38,7 +38,8 @@ public class Main {
     public static Position convertToPosition(String stringPosition) {
         Position position = new Position();
         position.row = stringPosition.charAt(0) - 65;
-        position.col = (int)stringPosition.charAt(1) - 48;
+        String column = stringPosition.substring(1);
+        position.col = Integer.parseInt(column);
         return position;
     }
 
@@ -62,13 +63,7 @@ public class Main {
         }
     }
 
-    public static boolean isPositionOnBoard(Position position) {
-        if (position.row < 0 || position.row > 9 || position.col < 1 || position. col > 10) {
-            System.out.println("Error! Co-ordinates out of bounds.");
-            return false;
-        }
-        return true;
-    }
+
 
     public static boolean isShipPositionValid(char[][] currentBoard, int shipLength, Position position1, Position position2) {
         // Check if positions are in bounds
@@ -108,6 +103,14 @@ public class Main {
         }
 
 
+        return true;
+    }
+
+    public static boolean isPositionOnBoard(Position position) {
+        if (position.row < 0 || position.row > 9 || position.col < 1 || position. col > 10) {
+            System.out.println("Error! Co-ordinates out of bounds.");
+            return false;
+        }
         return true;
     }
 }
