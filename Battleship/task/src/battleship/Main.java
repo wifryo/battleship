@@ -62,12 +62,29 @@ public class Main {
         }
     }
 
+    public static boolean isPositionOnBoard(Position position) {
+        if (position.row < 0 || position.row > 9 || position.col < 1 || position. col > 10) {
+            System.out.println("Error! Co-ordinates out of bounds.");
+            return false;
+        }
+        return true;
+    }
+
     public static boolean isShipPositionValid(char[][] currentBoard, int shipLength, Position position1, Position position2) {
         // Check if positions are in bounds
+        if (!isPositionOnBoard(position1)) {
+            System.out.println("Error! Co-ordinates out of bounds.");
+            return false;
+        }
+        if (!isPositionOnBoard(position2)) {
+            System.out.println("Error! Co-ordinates out of bounds.");
+            return false;
+        }
+
 
         // Check if diagonal somehow
         if (position1.row != position2.row && position1.col != position2.col) {
-            System.out.println("Error! Invalid ship location.");
+            System.out.println("Error! Invalid ship shape.");
             return false;
         }
         // Check if length correct
