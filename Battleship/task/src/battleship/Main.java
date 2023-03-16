@@ -32,9 +32,35 @@ public class Main {
         Position position1 = convertToPosition(pos1);
         Position position2 = convertToPosition(pos2);
 
-        boolean valid = isShipPositionValid(currentBoard, 5, position1, position2);
-        System.out.println(valid);
+        if (isShipPositionValid(currentBoard, 5, position1, position2)) {
+            currentBoard = addShipToBoard(currentBoard, position1, position2);
+        };
+
+        drawBoard(currentBoard);
     }
+    public static char[][] addShipToBoard(char[][] currentBoard, Position position1, Position position2) {
+        // Check if ship is horizontal or vertical
+        if (position1.row == position2.row) {
+            // Horizontal
+            // Change symbols to ship
+            if (position1.col < position2.col) {
+                for (int i = position1.col; i <= position2.col; i++) {
+                    currentBoard[position1.row][i] = 'O';
+                }
+            }
+            if (position1.col > position2.col) {
+                for (int i = position2.col; i <= position1.col; i++) {
+                    currentBoard[position1.row][i] = 'O';
+                }
+        }
+        if (position1.col == position1.col) {
+            // Vertical
+            // Change symbols to ship
+        }
+    }
+        return currentBoard;
+    }
+
     public static Position convertToPosition(String stringPosition) {
         Position position = new Position();
         position.row = stringPosition.charAt(0) - 65;
