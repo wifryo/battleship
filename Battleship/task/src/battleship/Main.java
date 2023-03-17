@@ -52,10 +52,20 @@ public class Main {
                 for (int i = position2.col; i <= position1.col; i++) {
                     currentBoard[position1.row][i] = 'O';
                 }
-        }
+            }
         if (position1.col == position1.col) {
             // Vertical
             // Change symbols to ship
+            if (position1.row < position2.row) {
+                for (int i = position1.row; i <= position2.row; i++) {
+                    currentBoard[position1.col][i] = 'O';
+                }
+            }
+            if (position1.row > position2.row) {
+                for (int i = position2.row; i <= position1.row; i++) {
+                    currentBoard[position1.col][i] = 'O';
+                }
+            }
         }
     }
         return currentBoard;
