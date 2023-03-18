@@ -145,6 +145,90 @@ public class Main {
         return false;
     }
 
+    public static boolean isShipAdjacent(char[][] currentBoard, Position position1, Position position2) {
+        // Check if ship is horizontal or vertical
+        // Horizontally oriented ship
+        if (position1.row == position2.row) {
+            if (position1.col < position2.col) {
+                for (int i = position1.col; i <= position2.col; i++) {
+                    Position adjacentPos = new Position();
+                    adjacentPos.row = position1.row + 1;
+                    adjacentPos.col = i;
+                    if (isPositionOnBoard(adjacentPos)) {
+                        if (currentBoard[adjacentPos.row][adjacentPos.col] == 'O') {
+                            return true;
+                        }
+                    }
+                    adjacentPos.row = position1.row - 1;
+                    if (isPositionOnBoard(adjacentPos)) {
+                        if (currentBoard[adjacentPos.row][adjacentPos.col] == 'O') {
+                            return true;
+                        }
+                    }
+                }
+            }
+            if (position1.col > position2.col) {
+                for (int i = position2.col; i <= position1.col; i++) {
+                    Position adjacentPos = new Position();
+                    adjacentPos.row = position1.row + 1;
+                    adjacentPos.col = i;
+                    if (isPositionOnBoard(adjacentPos)) {
+                        if (currentBoard[adjacentPos.row][adjacentPos.col] == 'O') {
+                            return true;
+                        }
+                    }
+                    adjacentPos.row = position1.row - 1;
+                    if (isPositionOnBoard(adjacentPos)) {
+                        if (currentBoard[adjacentPos.row][adjacentPos.col] == 'O') {
+                            return true;
+                        }
+                    }
+                }
+            }
+        }
+        // Vertically oriented ship
+        if (position1.col == position1.col) {
+            if (position1.row < position2.row) {
+                for (int i = position1.row; i <= position2.row; i++) {
+                    Position adjacentPos = new Position();
+                    adjacentPos.row = i;
+                    adjacentPos.col = position1.col + 1;
+                    if (isPositionOnBoard(adjacentPos)) {
+                        if (currentBoard[adjacentPos.row][adjacentPos.col] == 'O') {
+                            return true;
+                        }
+                    }
+                    adjacentPos.col = position1.col - 1;
+                    if (isPositionOnBoard(adjacentPos)) {
+                        if (currentBoard[adjacentPos.row][adjacentPos.col] == 'O') {
+                            return true;
+                        }
+                    }
+                }
+            }
+
+            if (position1.row > position2.row) {
+                for (int i = position2.row; i <= position1.row; i++) {
+                    Position adjacentPos = new Position();
+                    adjacentPos.row = i;
+                    adjacentPos.col = position1.col + 1;
+                    if (isPositionOnBoard(adjacentPos)) {
+                        if (currentBoard[adjacentPos.row][adjacentPos.col] == 'O') {
+                            return true;
+                        }
+                    }
+                    adjacentPos.col = position1.col - 1;
+                    if (isPositionOnBoard(adjacentPos)) {
+                        if (currentBoard[adjacentPos.row][adjacentPos.col] == 'O') {
+                            return true;
+                        }
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
     public static void drawBoard(char[][] currentBoard) {
         // Print column labels
         System.out.println("  1 2 3 4 5 6 7 8 9 10");
@@ -171,16 +255,12 @@ public class Main {
             return false;
         }
 
-
         // Check if diagonal somehow
         if (position1.row != position2.row && position1.col != position2.col) {
             System.out.println("Error! Invalid ship shape.");
             return false;
         }
         // Check if length correct
-        System.out.println("position 1 (row, col): " + position1.row + " " + position1.col);
-        System.out.println("position 2 (row, col): " + position2.row + " " + position2.col);
-
         if (position1.row == position2.row) {
             int inputLength = abs(position1.col - position2.col) + 1;
             System.out.println("inputted ship length: " + inputLength);
@@ -198,16 +278,19 @@ public class Main {
         }
         // Check if position is occupied by another ship
         if (isShipPresent(currentBoard, position1, position2)) {
+            System.out.println("Error! Position occupied by another ship.");
             return false;
         }
         // Check if position is adjacent to another ship
-        //todo
+        if (isShipAdjacent(currentBoard, position1, position2)) {
+            System.out.println("Error! Position adjacent to another ship.");
+            return false;
+        }
         return true;
     }
 
     public static boolean isPositionOnBoard(Position position) {
         if (position.row < 0 || position.row > 9 || position.col < 0 || position.col > 9) {
-            System.out.println("Error! Co-ordinates out of bounds.");
             return false;
         }
         return true;
