@@ -23,43 +23,52 @@ public class Main {
         drawBoard(currentBoard);
 
         // Get aircraft carrier inputs
-        System.out.println("Enter the coordinates of the Aircraft Carrier (5 cells):");
-        Scanner scanner = new Scanner(System.in);
-        String pos1 = scanner.next();
-        String pos2 = scanner.next();
+        Position[] aircraftCarrierPositions = getShipPosition("Aircraft Carrier", 5, currentBoard);
 
-        // Convert string positions to integers stored in instances of Position classes
-        Position position1 = convertToPosition(pos1);
-        Position position2 = convertToPosition(pos2);
-
-        if (isShipPositionValid(currentBoard, 5, position1, position2)) {
+        if (isShipPositionValid(currentBoard, 5, aircraftCarrierPositions[0], aircraftCarrierPositions[1])) {
             System.out.println("position valid");
-            currentBoard = addShipToBoard(currentBoard, position1, position2);
+            currentBoard = addShipToBoard(currentBoard, aircraftCarrierPositions[0], aircraftCarrierPositions[1]);
         } else {
             System.out.println("Error! Position invalid.");
         }
 
-        drawBoard(currentBoard);
+/*        drawBoard(currentBoard);
 
         // Get battleship inputs
-        System.out.println("Enter the coordinates of the Battleship (4 cells):");
-        pos1 = scanner.next();
-        pos2 = scanner.next();
-        // Convert string positions to integers stored in instances of Position classes
-        position1 = convertToPosition(pos1);
-        position2 = convertToPosition(pos2);
+        Position[] battleshipPositions = getShipPosition("Aircraft Carrier", 5, currentBoard);
 
-        if (isShipPositionValid(currentBoard, 4, position1, position2)) {
+        if (isShipPositionValid(currentBoard, 4, battleshipPositions[0], battleshipPositions[1])) {
             System.out.println("position valid");
-            currentBoard = addShipToBoard(currentBoard, position1, position2);
+            currentBoard = addShipToBoard(currentBoard, battleshipPositions[0], battleshipPositions[1]);
         } else {
             System.out.println("Error! Ship position invalid.");
         }
 
-        drawBoard(currentBoard);
+        drawBoard(currentBoard);*/
 
     }
+    public static Position[] getShipPosition(String shipName, int shipLength, char[][] currentBoard) {
+        Position[] positions = new Position[2];
+        positions[0] = new Position();
+        positions[1] = new Position();
+        positions[0].row = -1;
+        positions[0].col = -1;
+        positions[1].row = -1;
+        positions[1].col = -1;
 
+        while (!isShipPositionValid(currentBoard, shipLength, positions[0], positions[1])) {
+            System.out.println("Enter the coordinates of the " + shipName + " (" + shipLength + " cells):");
+            Scanner scanner = new Scanner(System.in);
+            String pos1 = scanner.next();
+            String pos2 = scanner.next();
+            positions[0] = convertToPosition(pos1);
+            positions[1] = convertToPosition(pos2);
+            if ((!isShipPositionValid(currentBoard, shipLength, positions[0], positions[1]))) {
+                System.out.println("Invalid ship position, please try again.");
+            }
+        }
+        return positions;
+    }
 
     public static char[][] addShipToBoard(char[][] currentBoard, Position position1, Position position2) {
         //todo: make addshiptoboard work with column 10
@@ -247,17 +256,14 @@ public class Main {
     public static boolean isShipPositionValid(char[][] currentBoard, int shipLength, Position position1, Position position2) {
         // Check if positions are in bounds
         if (!isPositionOnBoard(position1)) {
-            System.out.println("Error! Co-ordinates out of bounds.");
             return false;
         }
         if (!isPositionOnBoard(position2)) {
-            System.out.println("Error! Co-ordinates out of bounds.");
             return false;
         }
 
         // Check if diagonal somehow
         if (position1.row != position2.row && position1.col != position2.col) {
-            System.out.println("Error! Invalid ship shape.");
             return false;
         }
         // Check if length correct
@@ -265,25 +271,21 @@ public class Main {
             int inputLength = abs(position1.col - position2.col) + 1;
             System.out.println("inputted ship length: " + inputLength);
             if (inputLength != shipLength) {
-                System.out.println("Error! Invalid ship length.");
                 return false;
             }
         }
         if (position1.col == position2.col) {
             int inputLength = abs(position1.row - position2.row) + 1;
             if (inputLength != shipLength) {
-                System.out.println("Error! Invalid ship length.");
                 return false;
             }
         }
         // Check if position is occupied by another ship
         if (isShipPresent(currentBoard, position1, position2)) {
-            System.out.println("Error! Position occupied by another ship.");
             return false;
         }
         // Check if position is adjacent to another ship
         if (isShipAdjacent(currentBoard, position1, position2)) {
-            System.out.println("Error! Position adjacent to another ship.");
             return false;
         }
         return true;
