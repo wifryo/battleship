@@ -71,16 +71,14 @@ public class Main {
             positions[0] = convertToPosition(pos1);
             positions[1] = convertToPosition(pos2);
             if ((!isShipPositionValid(currentBoard, shipLength, positions[0], positions[1]))) {
-                System.out.println("Invalid ship position, please try again.");
+                System.out.println("Error! Invalid ship position, please try again.");
             }
+
         }
         return positions;
     }
 
     public static char[][] addShipToBoard(char[][] currentBoard, Position position1, Position position2) {
-        System.out.println("welcome to addshiptoboard");
-
-
         // Check if ship is horizontal or vertical
         // Horizontally oriented ship
         if (position1.row == position2.row) {
@@ -163,34 +161,38 @@ public class Main {
     }
 
     public static boolean isShipAdjacent(char[][] currentBoard, Position adjPosition1, Position adjPosition2) {
+        // Todo - fix bug in this method that changes the positions unintentionally
         // Reorder inputs if backwards
-        Position tempPosition1 = adjPosition1;
-        Position tempPosition2 = adjPosition2;
+        int position1row = adjPosition1.row;
+        int position1col = adjPosition1.col;
+        int position2row = adjPosition2.row;
+        int position2col = adjPosition2.col;
+
         if (adjPosition1.row > adjPosition2.row) {
-            adjPosition1.row = tempPosition2.row;
-            adjPosition2.row = tempPosition1.row;
+            position1row = adjPosition2.row;
+            position2row = adjPosition1.row;
         }
         if (adjPosition1.col > adjPosition2.col) {
-            adjPosition1.col = tempPosition2.col;
-            adjPosition2.col = tempPosition1.col;
+            position1col = adjPosition2.row;
+            position2col = adjPosition1.row;
         }
 
         // Check if ship is horizontal or vertical
         // Horizontally oriented ship
-        if (adjPosition1.row == adjPosition2.row) {
+        if (position1row == position2row) {
 
                 // First check if there is another ship in front or behind ship being placed
             try {
-                if (currentBoard[adjPosition1.row][adjPosition1.col - 1] == 'O' || currentBoard[adjPosition1.row][adjPosition2.col + 1] == 'O') {
+                if (currentBoard[position1row][position1col - 1] == 'O' || currentBoard[position1row][position2col + 1] == 'O') {
                     return true;
                 }}
             catch (Exception e) {
                 // bleb
             }
                 // Check if there is another ship beside ship being placed
-                for (int i = adjPosition1.col; i <= adjPosition2.col; i++) {
+                for (int i = position1col; i <= position2col; i++) {
                     Position adjacentPos = new Position();
-                    adjacentPos.row = adjPosition1.row + 1;
+                    adjacentPos.row = position1row + 1;
                     adjacentPos.col = i;
                     if (isPositionOnBoard(adjacentPos)) {
                         if (currentBoard[adjacentPos.row][adjacentPos.col] == 'O') {
@@ -206,17 +208,17 @@ public class Main {
                 }
         }
         // Vertically oriented ship
-        if (adjPosition1.col == adjPosition1.col) {
+        if (position1col == position2col) {
                 // First check if there is another ship in front or behind ship being placed
             try {
-                if (currentBoard[adjPosition1.row - 1][adjPosition1.col] == 'O' || currentBoard[adjPosition2.row + 1][adjPosition1.col] == 'O') {
+                if (currentBoard[position1row - 1][position1col] == 'O' || currentBoard[position2row + 1][position1col] == 'O') {
                     return true;
                 }}
             catch (Exception e) {
                 // bleb
             }
                 // Check if there is another ship beside ship being placed
-                for (int i = adjPosition1.row; i <= adjPosition2.row; i++) {
+                for (int i = position1row; i <= position2row; i++) {
                     Position adjacentPos = new Position();
                     adjacentPos.row = i;
                     adjacentPos.col = adjPosition1.col + 1;
@@ -254,49 +256,48 @@ public class Main {
     public static boolean isShipPositionValid(char[][] currentBoard, int shipLength, Position position1, Position position2) {
         // Check if positions are in bounds
         if (!isPositionOnBoard(position1)) {
-            System.out.println("Out of bounds");
+            //System.out.println("Out of bounds");
             return false;
         }
         if (!isPositionOnBoard(position2)) {
-            System.out.println("Out of bounds");
+            //System.out.println("Out of bounds");
             return false;
         }
 
         // Check if diagonal somehow
         if (position1.row != position2.row && position1.col != position2.col) {
-            System.out.println("Diagonal");
+            //System.out.println("Diagonal");
             return false;
         }
         // Check if length correct
         if (position1.row == position2.row) {
-            System.out.println("length check guy reached");
-            System.out.println("position 1 column: " + position1.col);
-            System.out.println("position 2 column: " + position2.col);
             int inputLength = abs(position1.col - position2.col) + 1;
-            System.out.println("inputlength: " + inputLength);
-            System.out.println("shiplength: " + shipLength);
             if (inputLength != shipLength) {
-                System.out.println("Wrong length");
+                //System.out.println("Wrong length");
                 return false;
             }
         }
         if (position1.col == position2.col) {
             int inputLength = abs(position1.row - position2.row) + 1;
             if (inputLength != shipLength) {
-                System.out.println("Wrong length");
+                //System.out.println("Wrong length");
                 return false;
             }
         }
+
         // Check if position is occupied by another ship
         if (isShipPresent(currentBoard, position1, position2)) {
-            System.out.println("Occupied by another ship");
+            //System.out.println("Occupied by another ship");
             return false;
         }
+
+
         // Check if position is adjacent to another ship
         if (isShipAdjacent(currentBoard, position1, position2)) {
-            System.out.println("Another ship adjacent");
+            //System.out.println("Another ship adjacent");
             return false;
         }
+
         return true;
     }
 
