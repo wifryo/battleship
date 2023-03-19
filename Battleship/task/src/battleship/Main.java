@@ -54,31 +54,26 @@ public class Main {
 
     }
 
-    public static Position[] getShipPosition(String shipName, int shipLength, char[][] currentBoard) {
+    private static Position[] getShipPosition(String shipName, int shipLength, char[][] currentBoard) {
         Position[] positions = new Position[2];
-        positions[0] = new Position();
-        positions[1] = new Position();
-        positions[0].row = -1;
-        positions[0].col = -1;
-        positions[1].row = -1;
-        positions[1].col = -1;
+        boolean validShipPosition = false;
 
-        while (!isShipPositionValid(currentBoard, shipLength, positions[0], positions[1])) {
+        while (!validShipPosition) {
             System.out.println("Enter the coordinates of the " + shipName + " (" + shipLength + " cells):");
             Scanner scanner = new Scanner(System.in);
             String pos1 = scanner.next();
             String pos2 = scanner.next();
             positions[0] = convertToPosition(pos1);
             positions[1] = convertToPosition(pos2);
-            if ((!isShipPositionValid(currentBoard, shipLength, positions[0], positions[1]))) {
+            validShipPosition = isShipPositionValid(currentBoard, shipLength, positions[0], positions[1]);
+            if (!validShipPosition) {
                 System.out.println("Error! Invalid ship position, please try again.");
             }
-
         }
         return positions;
     }
 
-    public static char[][] addShipToBoard(char[][] currentBoard, Position position1, Position position2) {
+    private static char[][] addShipToBoard(char[][] currentBoard, Position position1, Position position2) {
         // Check if ship is horizontal or vertical
         // Horizontally oriented ship
         if (position1.row == position2.row) {
@@ -108,11 +103,10 @@ public class Main {
                 }
             }
         }
-
         return currentBoard;
     }
 
-    public static Position convertToPosition(String stringPosition) {
+    private static Position convertToPosition(String stringPosition) {
         Position position = new Position();
         position.row = stringPosition.charAt(0) - 65;
         String column = stringPosition.substring(1);
@@ -120,7 +114,7 @@ public class Main {
         return position;
     }
 
-    public static boolean isShipPresent(char[][] currentBoard, Position position1, Position position2) {
+    private static boolean isShipPresent(char[][] currentBoard, Position position1, Position position2) {
         // Check if ship is horizontal or vertical
         // Horizontally oriented ship
         if (position1.row == position2.row) {
@@ -160,8 +154,7 @@ public class Main {
         return false;
     }
 
-    public static boolean isShipAdjacent(char[][] currentBoard, Position adjPosition1, Position adjPosition2) {
-        // Todo - fix bug in this method that changes the positions unintentionally
+    private static boolean isShipAdjacent(char[][] currentBoard, Position adjPosition1, Position adjPosition2) {
         // Reorder inputs if backwards
         int position1row = adjPosition1.row;
         int position1col = adjPosition1.col;
@@ -176,7 +169,6 @@ public class Main {
             position1col = adjPosition2.row;
             position2col = adjPosition1.row;
         }
-
         // Check if ship is horizontal or vertical
         // Horizontally oriented ship
         if (position1row == position2row) {
@@ -238,13 +230,13 @@ public class Main {
         return false;
     }
 
-    public static void drawBoard(char[][] currentBoard) {
+    private static void drawBoard(char[][] currentBoard) {
         // Print column labels
+        char rowLabel = 'A';
         System.out.println("  1 2 3 4 5 6 7 8 9 10");
         for (int row = 0; row < 10; row++) {
             // Print row labels
-            char rowLabel = (char) (65 + row);
-            System.out.print(rowLabel + " ");
+            System.out.print(rowLabel++ + " ");
             for (int col = 0; col < 10; col++) {
                 // Print board contents
                 System.out.print(currentBoard[row][col] + " ");
@@ -253,7 +245,7 @@ public class Main {
         }
     }
 
-    public static boolean isShipPositionValid(char[][] currentBoard, int shipLength, Position position1, Position position2) {
+    private static boolean isShipPositionValid(char[][] currentBoard, int shipLength, Position position1, Position position2) {
         // Check if positions are in bounds
         if (!isPositionOnBoard(position1)) {
             //System.out.println("Out of bounds");
@@ -301,7 +293,7 @@ public class Main {
         return true;
     }
 
-    public static boolean isPositionOnBoard(Position position) {
+    private static boolean isPositionOnBoard(Position position) {
         if (position.row < 0 || position.row > 9 || position.col < 0 || position.col > 9) {
             return false;
         }
