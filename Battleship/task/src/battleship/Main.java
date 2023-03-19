@@ -277,7 +277,6 @@ public class Main {
         // Check if length correct
         if (position1.row == position2.row) {
             int inputLength = abs(position1.col - position2.col) + 1;
-            System.out.println("inputted ship length: " + inputLength);
             if (inputLength != shipLength) {
                 return false;
             }
