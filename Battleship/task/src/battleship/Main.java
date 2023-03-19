@@ -23,30 +23,37 @@ public class Main {
         drawBoard(currentBoard);
 
         // Get aircraft carrier inputs
-        Position[] aircraftCarrierPositions = getShipPosition("Aircraft Carrier", 5, currentBoard);
+        Position[] inputPositions = getShipPosition("Aircraft Carrier", 5, currentBoard);
+        currentBoard = addShipToBoard(currentBoard, inputPositions[0], inputPositions[1]);
 
-        if (isShipPositionValid(currentBoard, 5, aircraftCarrierPositions[0], aircraftCarrierPositions[1])) {
-            System.out.println("position valid");
-            currentBoard = addShipToBoard(currentBoard, aircraftCarrierPositions[0], aircraftCarrierPositions[1]);
-        } else {
-            System.out.println("Error! Position invalid.");
-        }
-
-/*        drawBoard(currentBoard);
+        drawBoard(currentBoard);
 
         // Get battleship inputs
-        Position[] battleshipPositions = getShipPosition("Aircraft Carrier", 5, currentBoard);
+        inputPositions = getShipPosition("Battleship", 4, currentBoard);
+        currentBoard = addShipToBoard(currentBoard, inputPositions[0], inputPositions[1]);
 
-        if (isShipPositionValid(currentBoard, 4, battleshipPositions[0], battleshipPositions[1])) {
-            System.out.println("position valid");
-            currentBoard = addShipToBoard(currentBoard, battleshipPositions[0], battleshipPositions[1]);
-        } else {
-            System.out.println("Error! Ship position invalid.");
-        }
+        drawBoard(currentBoard);
 
-        drawBoard(currentBoard);*/
+        // Get submarine inputs
+        inputPositions = getShipPosition("Submarine", 3, currentBoard);
+        currentBoard = addShipToBoard(currentBoard, inputPositions[0], inputPositions[1]);
+
+        drawBoard(currentBoard);
+
+        // Get cruiser inputs
+        inputPositions = getShipPosition("Cruiser", 3, currentBoard);
+        currentBoard = addShipToBoard(currentBoard, inputPositions[0], inputPositions[1]);
+
+        drawBoard(currentBoard);
+
+        // Get destroyer inputs
+        inputPositions = getShipPosition("Destroyer", 2, currentBoard);
+        currentBoard = addShipToBoard(currentBoard, inputPositions[0], inputPositions[1]);
+
+        drawBoard(currentBoard);
 
     }
+
     public static Position[] getShipPosition(String shipName, int shipLength, char[][] currentBoard) {
         Position[] positions = new Position[2];
         positions[0] = new Position();
@@ -71,7 +78,7 @@ public class Main {
     }
 
     public static char[][] addShipToBoard(char[][] currentBoard, Position position1, Position position2) {
-        //todo: make addshiptoboard work with column 10
+        //todo: make addshiptoboard work with column 10, make vertical inputs work
 
         // Check if ship is horizontal or vertical
         // Horizontally oriented ship
@@ -88,21 +95,22 @@ public class Main {
                     currentBoard[position1.row][i] = 'O';
                 }
             }
-            // Vertically oriented ship
-            if (position1.col == position1.col) {
-                // Change symbols to ship
-                if (position1.row < position2.row) {
-                    for (int i = position1.row; i <= position2.row; i++) {
-                        currentBoard[position1.col][i] = 'O';
-                    }
+        }
+        // Vertically oriented ship
+        if (position1.col == position1.col) {
+            // Change symbols to ship
+            if (position1.row < position2.row) {
+                for (int i = position1.row; i <= position2.row; i++) {
+                    currentBoard[i][position1.col] = 'O';
                 }
-                if (position1.row > position2.row) {
-                    for (int i = position2.row; i <= position1.row; i++) {
-                        currentBoard[position1.col][i] = 'O';
-                    }
+            }
+            if (position1.row > position2.row) {
+                for (int i = position2.row; i <= position1.row; i++) {
+                    currentBoard[i][position1.col] = 'O';
                 }
             }
         }
+
         return currentBoard;
     }
 
