@@ -293,22 +293,20 @@ feedback:
     \ ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\
     G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~\
     \ ~ ~ ~ ~ ~ ~ ~ ~ \nEnter the coordinates of the Aircraft Carrier (5 cells):\n\
-    &gt; F3 F7\ninputted ship length: 5\ninputted ship length: 5\n  1 2 3 4 5 6 7\
-    \ 8 9 10\nA ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ O O O O O ~ ~ ~ \n\
-    G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ \nEnter the coordinates of the Battleship (4 cells):\n&gt; A1\
-    \ D1\n  1 2 3 4 5 6 7 8 9 10\nA O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB O ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\
-    C O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~\
-    \ O O O O O ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~\
-    \ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nEnter the coordinates of the Submarine\
-    \ (3 cells):\n&gt; J7 J10\ninputted ship length: 4\nInvalid ship position, please\
-    \ try again.\ninputted ship length: 4\nEnter the coordinates of the Submarine\
-    \ (3 cells):\n&gt; J10 J8\ninputted ship length: 3\ninputted ship length: 3\n\
-    \  1 2 3 4 5 6 7 8 9 10\nA O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC O ~\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ \nD O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ O O\
-    \ O O O ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~\
-    \ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ O O O \nEnter the coordinates of the Cruiser (3 cells):\n\
+    &gt; F3 F7\n  1 2 3 4 5 6 7 8 9 10\nA ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~\
+    \ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\
+    \ \nF ~ ~ O O O O O ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nEnter the coordinates of the Battleship\
+    \ (4 cells):\n&gt; A1 D1\n  1 2 3 4 5 6 7 8 9 10\nA O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB O\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~\
+    \ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ O O O O O ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~\
+    \ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nEnter the coordinates\
+    \ of the Submarine (3 cells):\n&gt; J7 J10\nInvalid ship position, please try\
+    \ again.\nEnter the coordinates of the Submarine (3 cells):\n&gt; J10 J8\n  1\
+    \ 2 3 4 5 6 7 8 9 10\nA O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC O ~ ~\
+    \ ~ ~ ~ ~ ~ ~ ~ \nD O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ O O O\
+    \ O O ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~\
+    \ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ O O O \nEnter the coordinates of the Cruiser (3 cells):\n\
     &gt; B9 D8\nInvalid ship position, please try again.\nEnter the coordinates of\
     \ the Cruiser (3 cells):\n&gt; B9 D9\n  1 2 3 4 5 6 7 8 9 10\nA O ~ ~ ~ ~ ~ ~\
     \ ~ ~ ~ \nB O ~ ~ ~ ~ ~ ~ ~ O ~ \nC O ~ ~ ~ ~ ~ ~ ~ O ~ \nD O ~ ~ ~ ~ ~ ~ ~ O\
@@ -319,5 +317,5 @@ feedback:
     D O ~ ~ ~ ~ O ~ ~ O ~ \nE ~ ~ ~ ~ ~ O ~ ~ ~ ~ \nF ~ ~ O O O O O ~ ~ ~ \nG ~ ~\
     \ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~\
     \ ~ ~ ~ O O O"
-  time: "Sun, 19 Mar 2023 10:30:37 UTC"
+  time: "Sun, 19 Mar 2023 10:32:19 UTC"
 record: -1

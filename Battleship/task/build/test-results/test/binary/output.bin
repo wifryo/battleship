@@ -13,8 +13,6 @@
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 :Enter the coordinates of the Aircraft Carrier (5 cells):
 > F3 F7
-inputted ship length: 5
-inputted ship length: 5
   1 2 3 4 5 6 7 8 9 10
 A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -41,13 +39,9 @@
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 3Enter the coordinates of the Submarine (3 cells):
 	> J7 J10
-inputted ship length: 4
 *Invalid ship position, please try again.
-inputted ship length: 4
 3Enter the coordinates of the Submarine (3 cells):
 	> J10 J8
-inputted ship length: 3
-inputted ship length: 3
   1 2 3 4 5 6 7 8 9 10
 A O ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 B O ~ ~ ~ ~ ~ ~ ~ ~ ~ 

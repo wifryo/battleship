@@ -163,6 +163,7 @@ public class Main {
     }
 
     public static boolean isShipAdjacent(char[][] currentBoard, Position position1, Position position2) {
+        // Todo: this method also needs to check if there is a ship already in front or behind the ship being placed, not just either side
         // Check if ship is horizontal or vertical
         // Horizontally oriented ship
         if (position1.row == position2.row) {

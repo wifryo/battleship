@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Tests" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-03-19T10:30:36" hostname="HERR-LAPTOPMANN" time="0.298">
+<testsuite name="Tests" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-03-19T10:32:18" hostname="HERR-LAPTOPMANN" time="0.232">
   <properties/>
-  <testcase name="start" classname="Tests" time="0.298">
-    <failure message="java.lang.AssertionError: Wrong answer in test #1&#10;&#10;Your program should not print a game field if there is an input mistake. (Too close to another ship)&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;1 2 3 4 5 6 7 8 9 10&#10;A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;Enter the coordinates of the Aircraft Carrier (5 cells):&#10;&gt; F3 F7&#10;inputted ship length: 5&#10;inputted ship length: 5&#10;  1 2 3 4 5 6 7 8 9 10&#10;A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ O O O O O ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;Enter the coordinates of the Battleship (4 cells):&#10;&gt; A1 D1&#10;  1 2 3 4 5 6 7 8 9 10&#10;A O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ O O O O O ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;Enter the coordinates of the Submarine (3 cells):&#10;&gt; J7 J10&#10;inputted ship length: 4&#10;Invalid ship position, please try again.&#10;inputted ship length: 4&#10;Enter the coordinates of the Submarine (3 cells):&#10;&gt; J10 J8&#10;inputted ship length: 3&#10;inputted ship length: 3&#10;  1 2 3 4 5 6 7 8 9 10&#10;A O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ O O O O O ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ O O O &#10;Enter the coordinates of the Cruiser (3 cells):&#10;&gt; B9 D8&#10;Invalid ship position, please try again.&#10;Enter the coordinates of the Cruiser (3 cells):&#10;&gt; B9 D9&#10;  1 2 3 4 5 6 7 8 9 10&#10;A O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B O ~ ~ ~ ~ ~ ~ ~ O ~ &#10;C O ~ ~ ~ ~ ~ ~ ~ O ~ &#10;D O ~ ~ ~ ~ ~ ~ ~ O ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ O O O O O ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ O O O &#10;Enter the coordinates of the Destroyer (2 cells):&#10;&gt; E6 D6&#10;  1 2 3 4 5 6 7 8 9 10&#10;A O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B O ~ ~ ~ ~ ~ ~ ~ O ~ &#10;C O ~ ~ ~ ~ ~ ~ ~ O ~ &#10;D O ~ ~ ~ ~ O ~ ~ O ~ &#10;E ~ ~ ~ ~ ~ O ~ ~ ~ ~ &#10;F ~ ~ O O O O O ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ O O O" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #1
+  <testcase name="start" classname="Tests" time="0.232">
+    <failure message="java.lang.AssertionError: Wrong answer in test #1&#10;&#10;Your program should not print a game field if there is an input mistake. (Too close to another ship)&#10;&#10;Please find below the output of your program during this failed test.&#10;Note that the '&gt;' character indicates the beginning of the input line.&#10;&#10;---&#10;&#10;1 2 3 4 5 6 7 8 9 10&#10;A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;Enter the coordinates of the Aircraft Carrier (5 cells):&#10;&gt; F3 F7&#10;  1 2 3 4 5 6 7 8 9 10&#10;A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ O O O O O ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;Enter the coordinates of the Battleship (4 cells):&#10;&gt; A1 D1&#10;  1 2 3 4 5 6 7 8 9 10&#10;A O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ O O O O O ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;Enter the coordinates of the Submarine (3 cells):&#10;&gt; J7 J10&#10;Invalid ship position, please try again.&#10;Enter the coordinates of the Submarine (3 cells):&#10;&gt; J10 J8&#10;  1 2 3 4 5 6 7 8 9 10&#10;A O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;C O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;D O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ O O O O O ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ O O O &#10;Enter the coordinates of the Cruiser (3 cells):&#10;&gt; B9 D8&#10;Invalid ship position, please try again.&#10;Enter the coordinates of the Cruiser (3 cells):&#10;&gt; B9 D9&#10;  1 2 3 4 5 6 7 8 9 10&#10;A O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B O ~ ~ ~ ~ ~ ~ ~ O ~ &#10;C O ~ ~ ~ ~ ~ ~ ~ O ~ &#10;D O ~ ~ ~ ~ ~ ~ ~ O ~ &#10;E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;F ~ ~ O O O O O ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ O O O &#10;Enter the coordinates of the Destroyer (2 cells):&#10;&gt; E6 D6&#10;  1 2 3 4 5 6 7 8 9 10&#10;A O ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;B O ~ ~ ~ ~ ~ ~ ~ O ~ &#10;C O ~ ~ ~ ~ ~ ~ ~ O ~ &#10;D O ~ ~ ~ ~ O ~ ~ O ~ &#10;E ~ ~ ~ ~ ~ O ~ ~ ~ ~ &#10;F ~ ~ O O O O O ~ ~ ~ &#10;G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;H ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ &#10;J ~ ~ ~ ~ ~ ~ ~ O O O" type="java.lang.AssertionError">java.lang.AssertionError: Wrong answer in test #1
 
 Your program should not print a game field if there is an input mistake. (Too close to another ship)
 
@@ -24,8 +24,6 @@ I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 Enter the coordinates of the Aircraft Carrier (5 cells):
 &gt; F3 F7
-inputted ship length: 5
-inputted ship length: 5
   1 2 3 4 5 6 7 8 9 10
 A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -52,13 +50,9 @@ I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 Enter the coordinates of the Submarine (3 cells):
 &gt; J7 J10
-inputted ship length: 4
 Invalid ship position, please try again.
-inputted ship length: 4
 Enter the coordinates of the Submarine (3 cells):
 &gt; J10 J8
-inputted ship length: 3
-inputted ship length: 3
   1 2 3 4 5 6 7 8 9 10
 A O ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 B O ~ ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -161,8 +155,6 @@ I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 Enter the coordinates of the Aircraft Carrier (5 cells):
 > F3 F7
-inputted ship length: 5
-inputted ship length: 5
   1 2 3 4 5 6 7 8 9 10
 A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 B ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
@@ -189,13 +181,9 @@ I ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
 J ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 Enter the coordinates of the Submarine (3 cells):
 > J7 J10
-inputted ship length: 4
 Invalid ship position, please try again.
-inputted ship length: 4
 Enter the coordinates of the Submarine (3 cells):
 > J10 J8
-inputted ship length: 3
-inputted ship length: 3
   1 2 3 4 5 6 7 8 9 10
 A O ~ ~ ~ ~ ~ ~ ~ ~ ~ 
 B O ~ ~ ~ ~ ~ ~ ~ ~ ~ 
