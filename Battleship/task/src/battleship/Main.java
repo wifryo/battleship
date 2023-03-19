@@ -167,7 +167,13 @@ public class Main {
         // Check if ship is horizontal or vertical
         // Horizontally oriented ship
         if (position1.row == position2.row) {
+
             if (position1.col < position2.col) {
+                // First check if there is another ship in front or behind ship being placed
+                if (currentBoard[position1.row][position1.col - 1] == 'O' || currentBoard[position1.row][position2.col + 1] == 'O') {
+                    return true;
+                }
+                // Check if there is another ship beside ship being placed
                 for (int i = position1.col; i <= position2.col; i++) {
                     Position adjacentPos = new Position();
                     adjacentPos.row = position1.row + 1;
@@ -186,6 +192,10 @@ public class Main {
                 }
             }
             if (position1.col > position2.col) {
+                // First check if there is another ship in front or behind ship being placed
+                if (currentBoard[position1.row][position2.col - 1] == 'O' || currentBoard[position1.row][position1.col + 1] == 'O') {
+                    return true;
+                }
                 for (int i = position2.col; i <= position1.col; i++) {
                     Position adjacentPos = new Position();
                     adjacentPos.row = position1.row + 1;
@@ -206,7 +216,13 @@ public class Main {
         }
         // Vertically oriented ship
         if (position1.col == position1.col) {
+
             if (position1.row < position2.row) {
+                // First check if there is another ship in front or behind ship being placed
+                if (currentBoard[position1.row - 1][position1.col] == 'O' || currentBoard[position2.row + 1][position1.col] == 'O') {
+                    return true;
+                }
+                // Check if there is another ship beside ship being placed
                 for (int i = position1.row; i <= position2.row; i++) {
                     Position adjacentPos = new Position();
                     adjacentPos.row = i;
@@ -226,6 +242,11 @@ public class Main {
             }
 
             if (position1.row > position2.row) {
+                // First check if there is another ship in front or behind ship being placed
+                if (currentBoard[position2.row - 1][position1.col] == 'O' || currentBoard[position1.row + 1][position1.col] == 'O') {
+                    return true;
+                }
+                // Check if there is another ship beside ship being placed
                 for (int i = position2.row; i <= position1.row; i++) {
                     Position adjacentPos = new Position();
                     adjacentPos.row = i;
