@@ -1,7 +1,4 @@
 package battleship;
-
-import java.util.Arrays;
-import java.util.Scanner;
 import java.lang.*;
 
 import static java.lang.Math.abs;
