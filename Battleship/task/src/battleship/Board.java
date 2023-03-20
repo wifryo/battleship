@@ -12,18 +12,18 @@ public class Board {
             Arrays.fill(row, '~');
     }
 
-    private Position[] getShipPosition(String shipName, int shipLength, char[][] currentBoard) {
+    public Position[] getShipPosition(Ship ship) {
         Position[] positions = new Position[2];
         boolean validShipPosition = false;
 
         while (!validShipPosition) {
-            System.out.println("Enter the coordinates of the " + shipName + " (" + shipLength + " cells):");
+            System.out.println("Enter the coordinates of the " + ship.getName() + " (" + ship.getLength() + " cells):");
             Scanner scanner = new Scanner(System.in);
             String pos1 = scanner.next();
             String pos2 = scanner.next();
             positions[0] = convertToPosition(pos1);
             positions[1] = convertToPosition(pos2);
-            validShipPosition = isShipPositionValid(shipLength, positions[0], positions[1]);
+            validShipPosition = isShipPositionValid(ship.getLength(), positions[0], positions[1]);
             if (!validShipPosition) {
                 System.out.println("Error! Invalid ship position, please try again.");
             }
@@ -31,7 +31,7 @@ public class Board {
         return positions;
     }
 
-    private void addShipToBoard(Ship ship, Position position1, Position position2) {
+    public void addShipToBoard(Position position1, Position position2) {
         // Check if ship is horizontal or vertical
         // Horizontally oriented ship
         if (position1.row == position2.row) {
@@ -187,7 +187,7 @@ public class Board {
         return false;
     }
 
-    private void draw() {
+    public void draw() {
         // Print column labels
         char rowLabel = 'A';
         System.out.println("  1 2 3 4 5 6 7 8 9 10");

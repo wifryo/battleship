@@ -7,19 +7,19 @@ public enum Ship {
     CRUISER("Cruiser", 3),
     DESTROYER("Destroyer", 2);
 
-    private final String printName;
+    private final String name;
     private final int length;
 
-    public String getPrintName() {
-        return printName;
+    public String getName() {
+        return name;
     }
 
     public int getLength() {
         return length;
     }
 
-    Ship(String printName, int length) {
-        this.printName = printName;
+    Ship(String name, int length) {
+        this.name = name;
         this.length = length;
     }
 }
