@@ -31,6 +31,30 @@ public class Board {
         return positions;
     }
 
+    public void takeShot() {
+        boolean validShotPosition = false;
+        Position position = new Position();
+        position.row = -1;
+        position.col = -1;
+        while (!isPositionOnBoard(position)) {
+            Scanner scanner = new Scanner(System.in);
+            String pos1 = scanner.next();
+            position = convertToPosition(pos1);
+            if (!isPositionOnBoard(position)) {
+                System.out.println("Error! You entered invalid coordinates! Try again:");
+            }
+        }
+        if (board[position.row][position.col] == 'O') {
+            board[position.row][position.col] = 'X';
+            draw();
+            System.out.println("You hit a ship!");
+        } else {
+            board[position.row][position.col] = 'M';
+            draw();
+            System.out.println("You missed!");
+        }
+    }
+
     public void addShipToBoard(Position position1, Position position2) {
         // Check if ship is horizontal or vertical
         // Horizontally oriented ship
@@ -251,7 +275,10 @@ public class Board {
     }
 
     private static boolean isPositionOnBoard(Position position) {
-        if (position.row < 0 || position.row > 9 || position.col < 0 || position.col > 9) {
+        if (position == null) {
+            return false;
+        }
+        else if (position.row < 0 || position.row > 9 || position.col < 0 || position.col > 9) {
             return false;
         }
         return true;

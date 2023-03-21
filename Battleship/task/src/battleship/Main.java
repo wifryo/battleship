@@ -20,6 +20,9 @@ public class Main {
             board.addShipToBoard(inputPositions[0], inputPositions[1]);
             board.draw();
         }
+        System.out.println("The game starts!");
+
+        board.takeShot();
     }
 }
 
