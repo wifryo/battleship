@@ -7,9 +7,24 @@ import static java.lang.Math.abs;
 
 public class Board {
     char[][] board = new char[10][10];
+    char[][] fogBoard = new char[10][10];
+
     public Board() {
         for (char[] row : board)
             Arrays.fill(row, '~');
+        for (char[] row : fogBoard)
+            Arrays.fill(row, '~');
+    }
+
+    public boolean doShipsRemain() {
+        for (int row = 0; row < 10; row++) {
+            for (int col = 0; col < 10; col++) {
+                if (board[row][col] == 'O') {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     public Position[] getShipPosition(Ship ship) {
@@ -32,6 +47,7 @@ public class Board {
     }
 
     public void takeShot() {
+        System.out.println("Take a shot!");
         boolean validShotPosition = false;
         Position position = new Position();
         position.row = -1;
@@ -44,13 +60,15 @@ public class Board {
                 System.out.println("Error! You entered invalid coordinates! Try again:");
             }
         }
-        if (board[position.row][position.col] == 'O') {
+        if (board[position.row][position.col] == 'O' || board[position.row][position.col] == 'X') {
             board[position.row][position.col] = 'X';
-            draw();
+            fogBoard[position.row][position.col] = 'X';
+            drawFog();
             System.out.println("You hit a ship!");
         } else {
             board[position.row][position.col] = 'M';
-            draw();
+            fogBoard[position.row][position.col] = 'M';
+            drawFog();
             System.out.println("You missed!");
         }
     }
@@ -221,6 +239,21 @@ public class Board {
             for (int col = 0; col < 10; col++) {
                 // Print board contents
                 System.out.print(board[row][col] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public void drawFog() {
+        // Print column labels
+        char rowLabel = 'A';
+        System.out.println("  1 2 3 4 5 6 7 8 9 10");
+        for (int row = 0; row < 10; row++) {
+            // Print row labels
+            System.out.print(rowLabel++ + " ");
+            for (int col = 0; col < 10; col++) {
+                // Print board contents
+                System.out.print(fogBoard[row][col] + " ");
             }
             System.out.println();
         }

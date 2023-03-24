@@ -21,8 +21,17 @@ public class Main {
             board.draw();
         }
         System.out.println("The game starts!");
+        board.drawFog();
+        System.out.println();
 
-        board.takeShot();
+        while (board.doShipsRemain()) {
+            board.takeShot();
+            board.draw();
+            System.out.println();
+        }
+
+        System.out.println("You sank the last ship. You won. Congratulations!");
+
     }
 }
 
