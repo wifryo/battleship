@@ -15,6 +15,7 @@ public class Main {
         Board board = new Board();
         board.draw();
 
+        // For each ship, get positions & add to board if valid
         for (Ship ship : Ship.values()) {
             Position[] inputPositions = board.getShipPosition(ship);
             board.addShipToBoard(inputPositions[0], inputPositions[1]);
