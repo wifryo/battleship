@@ -381,6 +381,12 @@ files:
         }
     }
   learner_created: false
+- name: src/battleship/Board.java
+  visible: true
+  learner_created: true
+- name: src/battleship/Ship.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/learn/step/10598#comment
 status: Unchecked
 record: -1

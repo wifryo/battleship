@@ -1,5 +1,6 @@
 package battleship;
 
+// All ship types
 public enum Ship {
     AIRCRAFT_CARRIER("Aircraft Carrier", 5),
     BATTLESHIP("Battleship", 4),

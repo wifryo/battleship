@@ -1,10 +1,10 @@
 type: choice
 is_multiple_choice: true
 options:
-- text: A multi-dimensional array is an "array of arrays".
+- text: It is impossible to create n-dimensional array with n &gt; 3.
 - text: It's possible to create an array of arrays with different length.
 - text: It's impossible to store objects of reference types in multidimensional arrays
-- text: It is impossible to create n-dimensional array with n &gt; 3.
+- text: A multi-dimensional array is an "array of arrays".
 files:
 - name: src/Task.java
   visible: true
