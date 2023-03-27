@@ -19,6 +19,9 @@
             <option value="$PROJECT_DIR$/Battleship/task/build/reports/tests" />
             <option value="$PROJECT_DIR$/Battleship/task/build/test-results" />
             <option value="$PROJECT_DIR$/Battleship/task/build/tmp" />
+            <option value="$PROJECT_DIR$/Topics/Abstract class/About abstract classes" />
+            <option value="$PROJECT_DIR$/Topics/Abstract class/IntBinaryOperation" />
+            <option value="$PROJECT_DIR$/Topics/Abstract class/Theory" />
             <option value="$PROJECT_DIR$/Topics/Array exceptions/Calculate Square" />
             <option value="$PROJECT_DIR$/Topics/Array exceptions/Determine an exception" />
             <option value="$PROJECT_DIR$/Topics/Array exceptions/Explore the standard class library" />
@@ -82,6 +85,9 @@
             <option value="$PROJECT_DIR$/Topics/Getters and setters/Getting the fullname" />
             <option value="$PROJECT_DIR$/Topics/Getters and setters/The name of setter" />
             <option value="$PROJECT_DIR$/Topics/Getters and setters/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Hiding and overriding/Publications" />
+            <option value="$PROJECT_DIR$/Topics/Hiding and overriding/Shapes area" />
+            <option value="$PROJECT_DIR$/Topics/Hiding and overriding/Theory" />
             <option value="$PROJECT_DIR$/Topics/Hierarchy of exceptions/BadRequestException" />
             <option value="$PROJECT_DIR$/Topics/Hierarchy of exceptions/Base classes of RuntimeException" />
             <option value="$PROJECT_DIR$/Topics/Hierarchy of exceptions/Subclasses of RuntimeException" />
@@ -134,6 +140,10 @@
             <option value="$PROJECT_DIR$/Topics/Package/The default import" />
             <option value="$PROJECT_DIR$/Topics/Package/The full name of a class" />
             <option value="$PROJECT_DIR$/Topics/Package/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Polymorphism/Publication and its subclasses" />
+            <option value="$PROJECT_DIR$/Topics/Polymorphism/Superclass method call" />
+            <option value="$PROJECT_DIR$/Topics/Polymorphism/The time of overloading" />
+            <option value="$PROJECT_DIR$/Topics/Polymorphism/Theory" />
             <option value="$PROJECT_DIR$/Topics/Static members/Accessing static members" />
             <option value="$PROJECT_DIR$/Topics/Static members/Project constants and methods" />
             <option value="$PROJECT_DIR$/Topics/Static members/Statements" />

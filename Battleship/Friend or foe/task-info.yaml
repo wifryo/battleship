@@ -388,5 +388,42 @@ files:
   visible: true
   learner_created: true
 feedback_link: https://hyperskill.org/learn/step/10598#comment
-status: Unchecked
+status: Failed
+feedback:
+  message: "Wrong answer in test #1\n\nAfter filling the first player field, you should\
+    \ request the second player&#39;s coordinates of the Aircraft Carrier in that\
+    \ way:\n&quot;Enter the coordinates of the Aircraft Carrier (5 cells):&quot;\n\
+    \nPlease find below the output of your program during this failed test.\nNote\
+    \ that the &#39;&gt;&#39; character indicates the beginning of the input line.\n\
+    \n---\n\n1 2 3 4 5 6 7 8 9 10\nA ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\
+    C ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~\
+    \ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nEnter the coordinates of the Aircraft\
+    \ Carrier (5 cells):\n&gt; F3 F7\n  1 2 3 4 5 6 7 8 9 10\nA ~ ~ ~ ~ ~ ~ ~ ~ ~\
+    \ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\
+    E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ O O O O O ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nEnter the\
+    \ coordinates of the Battleship (4 cells):\n&gt; A1 D1\n  1 2 3 4 5 6 7 8 9 10\n\
+    A O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD O ~\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ O O O O O ~ ~ ~ \nG ~ ~ ~ ~\
+    \ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~\
+    \ ~ ~ ~ ~ \nEnter the coordinates of the Submarine (3 cells):\n&gt; J7 J10\nError!\
+    \ Invalid ship position, please try again.\nEnter the coordinates of the Submarine\
+    \ (3 cells):\n&gt; J10 J8\n  1 2 3 4 5 6 7 8 9 10\nA O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB O\
+    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~\
+    \ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ O O O O O ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~\
+    \ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ O O O \nEnter the coordinates\
+    \ of the Cruiser (3 cells):\n&gt; B9 D8\nError! Invalid ship position, please\
+    \ try again.\nEnter the coordinates of the Cruiser (3 cells):\n&gt; B9 D9\n  1\
+    \ 2 3 4 5 6 7 8 9 10\nA O ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB O ~ ~ ~ ~ ~ ~ ~ O ~ \nC O ~ ~\
+    \ ~ ~ ~ ~ ~ O ~ \nD O ~ ~ ~ ~ ~ ~ ~ O ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ O O O\
+    \ O O ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~\
+    \ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ O O O \nEnter the coordinates of the Destroyer (2 cells):\n\
+    &gt; E6 D6\nError! Invalid ship position, please try again.\nEnter the coordinates\
+    \ of the Destroyer (2 cells):\n&gt; I2 J2\n  1 2 3 4 5 6 7 8 9 10\nA O ~ ~ ~ ~\
+    \ ~ ~ ~ ~ ~ \nB O ~ ~ ~ ~ ~ ~ ~ O ~ \nC O ~ ~ ~ ~ ~ ~ ~ O ~ \nD O ~ ~ ~ ~ ~ ~\
+    \ ~ O ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ O O O O O ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~\
+    \ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ O ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ O ~ ~ ~ ~ ~ O O O \n\
+    Press Enter and pass the move to another player\n&gt;"
+  time: "Mon, 27 Mar 2023 12:22:56 UTC"
 record: -1

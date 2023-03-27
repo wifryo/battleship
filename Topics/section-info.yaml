@@ -30,3 +30,6 @@ content:
 - Static members
 - Enums in Java
 - Fields and methods in enum
+- Hiding and overriding
+- Polymorphism
+- Abstract class
