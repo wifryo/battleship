@@ -24,7 +24,7 @@ public class Main {
 
         System.out.println("Press Enter and pass the move to another player");
         Scanner scanner = new Scanner(System.in);
-        String pos1 = scanner.next();
+        scanner.nextLine();
 
         Board board2 = new Board();
         board2.draw();
@@ -36,7 +36,7 @@ public class Main {
         }
 
         System.out.println("Press Enter and pass the move to another player");
-        pos1 = scanner.next();
+        scanner.nextLine();
 
         while (board1.doShipsRemain() && board2.doShipsRemain()) {
             board2.drawFog();
@@ -48,6 +48,8 @@ public class Main {
             if (!board2.doShipsRemain()) {
                 System.out.println("You sank the last ship. You won. Congratulations!");
             }
+            System.out.println("Press Enter and pass the move to another player");
+            scanner.nextLine();
 
             board1.drawFog();
             System.out.println("---------------------");
@@ -58,6 +60,8 @@ public class Main {
             if (!board1.doShipsRemain()) {
                 System.out.println("You sank the last ship. You won. Congratulations!");
             }
+            System.out.println("Press Enter and pass the move to another player");
+            scanner.nextLine();
         }
 //
 

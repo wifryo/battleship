@@ -47,7 +47,6 @@ public class Board {
     }
 
     public void takeShot() {
-        System.out.println("Take a shot!");
         boolean validShotPosition = false;
         Position position = new Position();
         position.row = -1;
