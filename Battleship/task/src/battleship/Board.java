@@ -63,7 +63,11 @@ public class Board {
             board[position.row][position.col] = 'X';
             fogBoard[position.row][position.col] = 'X';
             drawFog();
-            System.out.println("You hit a ship!");
+            if (isShipSunk(position)) {
+                System.out.println("You sank a ship!");
+            } else {
+                System.out.println("You hit a ship!");
+            }
         } else {
             board[position.row][position.col] = 'M';
             fogBoard[position.row][position.col] = 'M';
@@ -73,8 +77,11 @@ public class Board {
     }
 
     private boolean isShipSunk(Position position) {
-        // todo
-        return false;
+       if (board[position.row + 1][position.col] == 'O' || board[position.row][position.col + 1] == 'O' || board[position.row - 1][position.col] == 'O' || board[position.row][position.col - 1] == 'O') {
+           return false;
+       } else {
+           return true;
+       }
     }
 
     public void addShipToBoard(Position position1, Position position2) {
