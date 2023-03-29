@@ -72,6 +72,11 @@ public class Board {
         }
     }
 
+    private boolean isShipSunk(Position position) {
+        // todo
+        return false;
+    }
+
     public void addShipToBoard(Position position1, Position position2) {
         // Check if ship is horizontal or vertical
         // Horizontally oriented ship
