@@ -388,88 +388,9 @@ files:
   visible: true
   learner_created: true
 feedback_link: https://hyperskill.org/learn/step/10598#comment
-status: Failed
+status: Solved
 feedback:
-  message: "Wrong answer in test #1\n\nAfter a ship was sunk you should print &quot;You\
-    \ sank a ship!&quot; and ask to press Enter.\n\nPlease find below the output of\
-    \ your program during this failed test.\nNote that the &#39;&gt;&#39; character\
-    \ indicates the beginning of the input line.\n\n---\n\n[last 250 lines of output\
-    \ are shown, 314 skipped]\nC ~ ~ ~ ~ ~ ~ ~ ~ X ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~\
-    \ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nYou hit a ship!\n\
-    Press Enter and pass the move to another player\n&gt; \n  1 2 3 4 5 6 7 8 9 10\n\
-    A ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD ~ ~\
-    \ ~ X ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~\
-    \ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ M ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~\
-    \ ~ ~ ~ ~ \n---------------------\n  1 2 3 4 5 6 7 8 9 10\nA X ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ \nB O ~ ~ ~ ~ ~ ~ ~ O ~ \nC O ~ ~ ~ ~ ~ ~ ~ X ~ \nD O ~ ~ ~ ~ ~ ~ ~ O ~ \n\
-    E ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ O O O O O ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ O ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ O ~ ~ ~ ~ ~ O O O \n\nPlayer 1,\
-    \ it&#39;s your turn:\n&gt; D5\n  1 2 3 4 5 6 7 8 9 10\nA ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD ~ ~ ~ X X ~ ~ ~ ~ ~ \nE\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ M ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nYou hit a\
-    \ ship!\nPress Enter and pass the move to another player\n&gt; \n  1 2 3 4 5 6\
-    \ 7 8 9 10\nA X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~\
-    \ X ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n---------------------\n  1 2 3 4 5 6 7 8 9 10\nA ~ ~ ~\
-    \ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ O ~ ~ \nD ~ ~ ~ X X\
-    \ O ~ O ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ O O O O ~ O ~ ~ \nG ~ ~ ~ ~ ~ ~ ~\
-    \ O ~ ~ \nH ~ O O O O O ~ O ~ ~ \nI ~ ~ M ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ \n\nPlayer 2, it&#39;s your turn:\n&gt; B1\n  1 2 3 4 5 6 7 8 9 10\nA X ~\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ X ~ \nD ~ ~ ~ ~\
-    \ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~\
-    \ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ ~ \nYou hit a ship!\nPress Enter and pass the move to another player\n&gt;\
-    \ \n  1 2 3 4 5 6 7 8 9 10\nA ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD ~ ~ ~ X X ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ M ~\
-    \ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n---------------------\n  1 2 3 4 5 6 7\
-    \ 8 9 10\nA X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ ~ ~ ~ ~ ~ O ~ \nC O ~ ~ ~ ~ ~ ~ ~ X\
-    \ ~ \nD O ~ ~ ~ ~ ~ ~ ~ O ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ O O O O O ~ ~ ~ \n\
-    G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ O ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ O\
-    \ ~ ~ ~ ~ ~ O O O \n\nPlayer 1, it&#39;s your turn:\n&gt; D6\n  1 2 3 4 5 6 7\
-    \ 8 9 10\nA ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ \nD ~ ~ ~ X X X ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\
-    G ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ M ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ \nYou hit a ship!\nPress Enter and pass the move to another\
-    \ player\n&gt; \n  1 2 3 4 5 6 7 8 9 10\nA X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ ~ ~ ~\
-    \ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ X ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~\
-    \ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n---------------------\n  1\
-    \ 2 3 4 5 6 7 8 9 10\nA ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~\
-    \ ~ ~ ~ ~ O ~ ~ \nD ~ ~ ~ X X X ~ O ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ O O O\
-    \ O ~ O ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ O ~ ~ \nH ~ O O O O O ~ O ~ ~ \nI ~ ~ M ~ ~ ~ ~\
-    \ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nPlayer 2, it&#39;s your turn:\n&gt; C1\n \
-    \ 1 2 3 4 5 6 7 8 9 10\nA X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC X ~\
-    \ ~ ~ ~ ~ ~ ~ X ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~\
-    \ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~\
-    \ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nYou hit a ship!\nPress Enter and pass the\
-    \ move to another player\n&gt; \n  1 2 3 4 5 6 7 8 9 10\nA ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nD ~ ~ ~ X X X ~ ~ ~ ~ \nE\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ M ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n---------------------\n\
-    \  1 2 3 4 5 6 7 8 9 10\nA X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ ~ ~ ~ ~ ~ O ~ \nC X ~\
-    \ ~ ~ ~ ~ ~ ~ X ~ \nD O ~ ~ ~ ~ ~ ~ ~ O ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ O O\
-    \ O O O ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ O ~ ~ ~ ~\
-    \ ~ ~ ~ ~ \nJ ~ O ~ ~ ~ ~ ~ O O O \n\nPlayer 1, it&#39;s your turn:\n&gt; C8\n\
-    \  1 2 3 4 5 6 7 8 9 10\nA ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~\
-    \ ~ ~ ~ ~ ~ X ~ ~ \nD ~ ~ ~ X X X ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~\
-    \ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ M ~ ~ ~\
-    \ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nYou hit a ship!\nPress Enter and pass the\
-    \ move to another player\n&gt; \n  1 2 3 4 5 6 7 8 9 10\nA X ~ ~ ~ ~ ~ ~ ~ ~ ~\
-    \ \nB X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC X ~ ~ ~ ~ ~ ~ ~ X ~ \nD ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~\
-    \ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n---------------------\n\
-    \  1 2 3 4 5 6 7 8 9 10\nA ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC ~ ~\
-    \ ~ ~ ~ ~ ~ X ~ ~ \nD ~ ~ ~ X X X ~ O ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ O O\
-    \ O O ~ O ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ O ~ ~ \nH ~ O O O O O ~ O ~ ~ \nI ~ ~ M ~ ~ ~\
-    \ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \n\nPlayer 2, it&#39;s your turn:\n&gt; D1\n\
-    \  1 2 3 4 5 6 7 8 9 10\nA X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nB X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nC X ~\
-    \ ~ ~ ~ ~ ~ ~ X ~ \nD X ~ ~ ~ ~ ~ ~ ~ ~ ~ \nE ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nF ~ ~ ~ ~\
-    \ ~ ~ ~ ~ ~ ~ \nG ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nH ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nI ~ ~ ~ ~ ~ ~\
-    \ ~ ~ ~ ~ \nJ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ \nYou hit a ship!\nPress Enter and pass the\
-    \ move to another player"
-  time: "Tue, 28 Mar 2023 10:50:06 UTC"
+  message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">Hyperskill</a>
+    to continue learning.
+  time: "Wed, 29 Mar 2023 18:36:13 UTC"
 record: -1

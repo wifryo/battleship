@@ -77,11 +77,15 @@ public class Board {
     }
 
     private boolean isShipSunk(Position position) {
-       if (board[position.row + 1][position.col] == 'O' || board[position.row][position.col + 1] == 'O' || board[position.row - 1][position.col] == 'O' || board[position.row][position.col - 1] == 'O') {
-           return false;
-       } else {
-           return true;
-       }
+        try {
+            if (board[position.row + 1][position.col] == 'O' || board[position.row][position.col + 1] == 'O' || board[position.row - 1][position.col] == 'O' || board[position.row][position.col - 1] == 'O') {
+                return false;
+            } else {
+                return true;
+            }
+        } catch (Exception e) {
+            return true;
+        }
     }
 
     public void addShipToBoard(Position position1, Position position2) {
